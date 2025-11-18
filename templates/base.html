@@ -16,6 +16,7 @@
         .content {
             background-color: cadetblue;
             min-height: calc(100vh - 60px);
+            display: flex;
         }
         .nav-item {
             padding-left: 50px;
@@ -23,6 +24,14 @@
         }
         .first {
             padding-left: 200px;
+        }
+        .p1 {
+            background-color: blue;
+            width: 50%;
+        }
+        .p2 {
+            background-color: rgb(58, 226, 43);
+            width: 50%;
         }
     </style>
 </head>
@@ -36,8 +45,11 @@
         <a class="nav-item">Dropdown</a>
         <a class="nav-item">Contact</a>
     </div>
+    {% block content %}
     <div class="content">
-
+        <div class="p1"></div>
+        <div class="p2"></div>
     </div>
+    {% endblock %}
 </body>
 </html>

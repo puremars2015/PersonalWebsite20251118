@@ -3,10 +3,15 @@
 {% block content %}
 <div class="content">
     <div class="p1">
-        簡單自我介紹
+        <img src="{{ url_for('static', filename='asset/下載.jpeg') }}" alt="Profile Photo" class="profile-photo">
     </div>
     <div class="p2">
-        大頭照
+        <div class="quote-container">
+            <p class="quote-text">
+                "The only <span class="highlight-word journey">journey</span> is the one <span class="highlight-word within">within</span>."
+            </p>
+            <p class="quote-author">~ Rainer Maria Rilke</p>
+        </div>
     </div>
 </div>
 {% endblock %}
